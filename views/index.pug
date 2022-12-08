@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title Harry Dance Academy
+    style
+      include ../static/style.css
+
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src=" ../static/img/logo1.jpeg" width='40px' height='40px')
+                | HDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]    
+
+    section#introSection
+        div Welcome to Harry's Dance Academy
+        div.small Eat Sleep Dance Repeat
+    section#sponsorsSection
+        h2 Our Sponsors
+    H1 Contact Us
+    form(action= "/", method= "post", class= "myForm”")
+        <input type="text"class= “name” name="name" placeholder="Enter your name..">
+        <input type="phone" class= “myInput” name="phone" placeholder="Enter your phone..">
+        <input type="email" class= “myInput” name="email" placeholder="Enter your email..">
+        <input type="text" name="address" placeholder="Your address..">    
+        input(type="submit",value='Submit')  
+    footer#footer
+        | our footer here        
